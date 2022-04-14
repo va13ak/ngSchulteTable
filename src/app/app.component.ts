@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {CounterService} from "./shared/counter.service";
+import {environment} from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-schulte';
+  title = 'ngSchulte Table';
+  tableWidth: string = environment.tableWidth;
+  constructor(public gService: CounterService) {
+  }
 }

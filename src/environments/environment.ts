@@ -2,7 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+import {Environment} from "./interface";
+
+export const environment : Environment = {
+  tableCols: 5,  tableRows: 5,
+  tableWidth: '520px', tableHeight: '500px',
+  statusBarHeight: '50px',
   production: false
 };
 
