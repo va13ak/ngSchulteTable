@@ -1,0 +1,19 @@
+.chart {
+}
+
+.container {
+  display: grid;
+  //grid-template-columns: repeat(5, 1fr);
+  //grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: var(--stat_height) var(--stat_height) auto;
+  grid-gap: 5px;
+  //width: var(--width);
+  //min-height: var(--height);
+}
+
+.stat {
+  border: 1px dashed grey;
+  //margin: 4px;
+}
+
+

@@ -1,0 +1,18 @@
+<div>
+  <div class="statusbar" [style.--statusBarHeight]="statusBarHeight">
+    <p class="bar-element">Last result: {{ (gService.getLastResult()) | number : '1.1-1' }}</p>
+    <button class="btn" (click)="onClick()">Start new game</button>
+    <p class="bar-element">Best time: {{ (gService.getBestTime()) | number : '1.1-1' }}</p>
+  </div>
+  <hr>
+  <div
+    class="container"
+    [style.--width]="tableWidth"
+    [style.--height]="tableHeight"
+    [style.--stat_height]="statusBarHeight"
+  >
+    <div class="stat bar-element">Games: {{ gService.getNumberOfGames() }}</div>
+    <div class="stat bar-element">Average time: {{ gService.getAverageTime() | number : '1.1-1' }}</div>
+    <div echarts [options]="options" class="demo-chart chart"></div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<div class="cell" [ngClass]="{'red': cell.checked, 'grey': !gService.isStarted()}" (click)="onClick()">
+  <p>{{ gService.isStarted() ? cell.value : '' }}</p>
+</div>
