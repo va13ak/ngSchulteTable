@@ -48,7 +48,7 @@ export class CounterService {
       this.numbers.push(i);
     }
     this.tableCells.forEach(cell => {
-      let value = <number>this.numbers[this.getRandomInt(this.numbers.length)];
+      let value = <number>this.numbers[CounterService.getRandomInt(this.numbers.length)];
       this.numbers = this.numbers.filter(e => e !== value);
 
       cell.checked = false;
