@@ -14,6 +14,8 @@ export class CounterService {
   private bestTime = 0.0;
   private lastResult = 0.0;
   private storageKey = 'ngSchulte.';
+  private totalTime = 0.0;
+  private gamesNum = 0;
 
   time: number = 0;
   interval: any;
@@ -106,6 +108,9 @@ export class CounterService {
 
         this.lastResult = this.time / 10;
 
+        this.totalTime += this.time / 10;
+        this.gamesNum++;
+
         let strResult = JSON.stringify(aResult);
         //console.log('game results: ', strResult);
         localStorage.setItem(this.storageKey + 'results', strResult);
@@ -129,8 +134,10 @@ export class CounterService {
   private restoreBestTime() {
     let strBestTime = localStorage.getItem(this.storageKey + 'bestTime');
     if (strBestTime) {
-      let bestTime = parseFloat(strBestTime);
-      this.bestTime = bestTime;
+      let tmpBestTime = parseFloat(strBestTime);
+      if (!isNaN(tmpBestTime)) {
+        this.bestTime = tmpBestTime;
+      }
     }
   }
 
@@ -146,13 +153,25 @@ export class CounterService {
     return this.lastResult;
   }
 
-  private getRandomInt(max: number) {
+  getAverageTime() {
+    if (this.gamesNum == 0) {
+      return 0;
+    }
+    return this.totalTime / this.gamesNum;
+  }
+
+  getNumberOfGames() {
+    return this.gamesNum;
+  }
+
+  private static getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
   }
 
   restoreChartData() {
     let result = localStorage.getItem(this.storageKey + 'results');
     let aResult = [];
+    this.totalTime = 0;
     if (result) {
       aResult = JSON.parse(result);
     }
@@ -164,7 +183,11 @@ export class CounterService {
         name: v.date,
         value: v.score
       });
+
       this.lastResult = v.score;
+
+      this.totalTime += v.score;
+      this.gamesNum++;
     }
     //console.log('chartdata: ', JSON.stringify(this.chartData));
   }
@@ -172,4 +195,5 @@ export class CounterService {
   getNext(): number {
     return (this.tableCells.length === this.current) ? 0 : (this.current + 1);
   }
+
 }
