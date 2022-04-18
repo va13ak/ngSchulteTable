@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {CounterService} from "./shared/counter.service";
-import {environment} from "../environments/environment";
+import { CounterService } from "./shared/counter.service";
+import { environment } from "../environments/environment";
 
 @Component({
   selector: 'app-root',

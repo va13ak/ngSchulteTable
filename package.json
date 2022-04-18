@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@angular/service-worker": "~13.2.0",
     "@swimlane/ngx-charts": "^20.1.0",
     "echarts": "^5.3.2",
     "ngx-echarts": "^8.0.1",
