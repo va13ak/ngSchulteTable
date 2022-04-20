@@ -1,6 +1,6 @@
 <div class="main">
   <div class="title">
-    <h1>Schulte table</h1>
+    Schulte table
   </div>
 
   <div class="statusbar" *ngIf="gService.isStarted(); else altStatusBar">
@@ -19,7 +19,7 @@
   </ng-template>
 
   <ng-template #altStatusBar>
-    <div class="statusbar" >
+    <div class="statusbar">
       <p class="bar-element">Last result: {{ (gService.getLastResult()) | number : '1.1-1' }}</p>
       <button class="btn" (click)="onClick()">Start new game</button>
       <p class="bar-element">Best time: {{ (gService.getBestTime()) | number : '1.1-1' }}</p>
