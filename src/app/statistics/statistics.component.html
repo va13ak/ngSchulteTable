@@ -1,0 +1,18 @@
+<div>
+  <div>
+    <p>Your current time: {{ (gService.time / 10) | number : '1.1-1' }}</p>
+    <p>Your best time: {{ (gService.getBestTime()) | number : '1.1-1' }}</p>
+    <button class="btn" (click)="onClick()">Click to start new round!</button>
+  </div>
+  <div>
+    <ngx-charts-line-chart
+      [results]="gService.chartData"
+      [xAxis]="false"
+      [yAxis]="true"
+      [autoScale]="true"
+      [showYAxisLabel]="true"
+      [animations]="false"
+      yAxisLabel="Time, s"
+    ></ngx-charts-line-chart>
+  </div>
+</div>
