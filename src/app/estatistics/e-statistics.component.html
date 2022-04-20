@@ -13,6 +13,6 @@
   >
     <div class="stat bar-element">Games: {{ gService.getNumberOfGames() }}</div>
     <div class="stat bar-element">Average time: {{ gService.getAverageTime() | number : '1.1-1' }}</div>
-    <div echarts [options]="options" class="demo-chart chart"></div>
+    <div echarts [options]="options" [autoResize]="true" class="demo-chart chart stat"></div>
   </div>
 </div>

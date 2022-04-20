@@ -38,10 +38,11 @@ export class EStatisticsComponent implements OnInit {
         //type: 'time', // https://github.com/apache/echarts/issues/13073
         axisLabel: {
           show: false,
-          axisLine: {
-            onZero: false
-          },
           position: 'bottom'
+        },
+        axisLine: {
+          onZero: false,
+          show: false
         },
         data: this.data.map((item) => new Date(item.name)), // no need if type 'time'
         axisTick: {
@@ -83,7 +84,9 @@ export class EStatisticsComponent implements OnInit {
       grid: {
         //left: '45px',
         //top: '10px',
-        right: 0,
+        right: 5,
+        top: '10%',
+        bottom: '10%'
         //bottom: '10px'
       }
     }

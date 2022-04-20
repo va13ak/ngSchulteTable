@@ -5,5 +5,7 @@
   grid-gap: 5px;
   width: var(--width);
   min-height: var(--height);
+  align-items: stretch;
+  //border: 1px dashed grey;
 }
 

@@ -5,7 +5,10 @@
     <p class="bar-element">Time: {{ (gService.time / 10) | number : '1.1-1' }}</p>
   </div>
   <hr>
-  <div class="schulte-table container" [style.--width]="tableWidth" [style.--height]="tableHeight">
+  <div class="schulte-table container"
+       [style.--width]="tableWidth"
+       [style.--height]="tableHeight"
+  >
     <app-table-cell
       *ngFor="let cell of gService.tableCells"
       [cell]="cell"
