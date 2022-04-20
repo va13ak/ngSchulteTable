@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CounterService } from "./shared/counter.service";
-import { environment } from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,19 @@ import { environment } from "../environments/environment";
 })
 export class AppComponent {
   title = 'ngSchulte Table';
-  tableWidth: string = environment.tableWidth;
+
   constructor(public gService: CounterService) {
   }
+
+  onClick() {
+    if (this.gService.isStarted()) {
+      this.gService.stop();
+    } else {
+      this.gService.start();
+    }
+  }
 }
+
+// deploy:
+// https://github.com/angular-schule/angular-cli-ghpages#base-href
+// https://www.c-sharpcorner.com/blogs/a-guide-on-how-to-deploy-angular-applications-to-github-pages

@@ -1,13 +1,29 @@
-<div class="test" [style.--width]="tableWidth">
-  <h1>Schulte table</h1>
-  <hr>
-  <div>
+<div class="main">
+  <div class="title">
+    <h1>Schulte table</h1>
+  </div>
+
+  <div class="statusbar" *ngIf="gService.isStarted(); else altStatusBar">
+    <p class="bar-element">Next: {{ gService.getNext() }}</p>
+    <button class="btn btn-red" (click)="onClick()">{{ gService.isStarted() ? 'Break' : 'Start' }}</button>
+    <p class="bar-element">Time: {{ (gService.time / 10) | number : '1.1-1' }}</p>
+  </div>
+
+  <div class="container">
     <app-schulte-table *ngIf="gService.isStarted(); else statistics"></app-schulte-table>
   </div>
 
   <ng-template #statistics>
 <!--    <app-statistics></app-statistics>-->
     <app-estatistics></app-estatistics>
+  </ng-template>
+
+  <ng-template #altStatusBar>
+    <div class="statusbar" >
+      <p class="bar-element">Last result: {{ (gService.getLastResult()) | number : '1.1-1' }}</p>
+      <button class="btn" (click)="onClick()">Start new game</button>
+      <p class="bar-element">Best time: {{ (gService.getBestTime()) | number : '1.1-1' }}</p>
+    </div>
   </ng-template>
 </div>
 

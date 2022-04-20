@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService } from "../shared/counter.service";
-import {DatePipe} from "@angular/common";
-import { environment } from "../../environments/environment";
+import { DatePipe } from "@angular/common";
 
 // https://www.angularjswiki.com/angular/how-to-use-angular-pipes-in-components-and-services/
 
@@ -13,10 +12,6 @@ import { environment } from "../../environments/environment";
 export class EStatisticsComponent implements OnInit {
   options: any;
 
-  tableWidth: string = environment.tableWidth;
-  tableHeight: string = environment.tableHeight;
-  statusBarHeight: string = environment.statusBarHeight;
-
   data: any[] = [];
   dateList = this.data.map((item) => item.name);
   valueList = this.data.map((item) => item.value);
@@ -26,9 +21,6 @@ export class EStatisticsComponent implements OnInit {
     private datePipe: DatePipe
   ) {
     this.data = gService.chartData[0].series;
-    // console.log('data: ', this.data);
-    // console.log('dateList', this.dateList);
-    // console.log('valueList', this.valueList);
   }
 
   ngOnInit(): void {
@@ -90,10 +82,6 @@ export class EStatisticsComponent implements OnInit {
         //bottom: '10px'
       }
     }
-  }
-
-  onClick() {
-    this.gService.start();
   }
 
   getUsersLocale(defaultValue: string): string {
