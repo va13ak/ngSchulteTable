@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-for-ghpages": "ng build --base-href=https://va13ak.github.io/ngSchulteTable/ && "
   },
   "private": true,
   "dependencies": {

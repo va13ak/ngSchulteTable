@@ -112,7 +112,6 @@ export class CounterService {
         this.gamesNum++;
 
         let strResult = JSON.stringify(aResult);
-        //console.log('game results: ', strResult);
         localStorage.setItem(this.storageKey + 'results', strResult);
 
         if (!this.bestTime || (this.bestTime > (this.time / 10))) {
@@ -122,8 +121,6 @@ export class CounterService {
 
         this.finish();
       }
-
-      //console.log(JSON.stringify(this.tableCells));
 
       return true;
     }
@@ -189,7 +186,6 @@ export class CounterService {
       this.totalTime += v.score;
       this.gamesNum++;
     }
-    //console.log('chartdata: ', JSON.stringify(this.chartData));
   }
 
   getNext(): number {

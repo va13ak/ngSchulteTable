@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CounterService} from "../shared/counter.service";
-import { environment } from "../../environments/environment";
+import { CounterService } from "../shared/counter.service";
 
 @Component({
   selector: 'app-schulte-table',
@@ -8,21 +7,10 @@ import { environment } from "../../environments/environment";
   styleUrls: ['./schulte-table.component.scss']
 })
 export class SchulteTableComponent implements OnInit {
-  tableWidth: string = environment.tableWidth;
-  tableHeight: string = environment.tableHeight;
-  statusBarHeight: string = environment.statusBarHeight;
 
   constructor(public gService: CounterService) {
   }
 
   ngOnInit(): void {
-  }
-
-  onClick() {
-    if (this.gService.isStarted()) {
-      this.gService.stop();
-    } else {
-      this.gService.start();
-    }
   }
 }

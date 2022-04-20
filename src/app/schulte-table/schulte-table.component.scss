@@ -3,9 +3,6 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 5px;
-  width: var(--width);
-  min-height: var(--height);
-  align-items: stretch;
-  //border: 1px dashed grey;
-}
 
+  height: 100%;
+}

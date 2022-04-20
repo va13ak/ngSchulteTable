@@ -1,17 +1,7 @@
-.chart {
-}
-
 .container {
   display: grid;
-  grid-template-rows: var(--stat_height) var(--stat_height) auto;
+  grid-template-rows: var(--f) var(--f) auto;
   grid-gap: 5px;
-  width: var(--width);
-  height: var(--height);
+
+  height: 100%;
 }
-
-.stat {
-  border: 1px dashed grey;
-  //margin: 4px;
-}
-
-
