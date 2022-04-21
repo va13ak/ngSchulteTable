@@ -12,7 +12,7 @@
   <div></div>
 
   <div class="container">
-    <app-schulte-table *ngIf="gService.isStarted(); else statistics"></app-schulte-table>
+    <app-schulte-table *ngIf="gService.isStarted() || (gService.getLastResult() == 0); else statistics"></app-schulte-table>
   </div>
 
   <ng-template #statistics>
