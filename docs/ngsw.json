@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650550534309,
+  "timestamp": 1650554032614,
   "index": "https://va13ak.github.io/ngSchulteTable/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "https://va13ak.github.io/ngSchulteTable/favicon.ico",
         "https://va13ak.github.io/ngSchulteTable/index.html",
-        "https://va13ak.github.io/ngSchulteTable/main.fdd19a2e0a90d23a.js",
+        "https://va13ak.github.io/ngSchulteTable/main.7823f50bea6a16fd.js",
         "https://va13ak.github.io/ngSchulteTable/manifest.webmanifest",
         "https://va13ak.github.io/ngSchulteTable/polyfills.8d1cbda692d7a10d.js",
         "https://va13ak.github.io/ngSchulteTable/runtime.6b05ff43b8f20c92.js",
-        "https://va13ak.github.io/ngSchulteTable/styles.67ed820728648df2.css"
+        "https://va13ak.github.io/ngSchulteTable/styles.f1387ec4340a195e.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto"
@@ -54,12 +54,12 @@
     "https://va13ak.github.io/ngSchulteTable/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://va13ak.github.io/ngSchulteTable/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://va13ak.github.io/ngSchulteTable/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://va13ak.github.io/ngSchulteTable/index.html": "1b4c8ee99c3c8af18fc6cb203531695fb656207a",
-    "https://va13ak.github.io/ngSchulteTable/main.fdd19a2e0a90d23a.js": "d3dd5873bc396e01865446a06cfddf05ab94c1dc",
+    "https://va13ak.github.io/ngSchulteTable/index.html": "20b894db0943fe42099871e7c7ecf0ea266c35f0",
+    "https://va13ak.github.io/ngSchulteTable/main.7823f50bea6a16fd.js": "95f30a647e3ccd620bfe4645a3a575d6f0779d6c",
     "https://va13ak.github.io/ngSchulteTable/manifest.webmanifest": "20f3589233d8486b9f58aa07f22a4aeb410c685a",
     "https://va13ak.github.io/ngSchulteTable/polyfills.8d1cbda692d7a10d.js": "2cffbf64326bebb83531a58581eb4536a8868cc5",
     "https://va13ak.github.io/ngSchulteTable/runtime.6b05ff43b8f20c92.js": "bbac134ac79cc3b34b4dab947133cf74e2fc016d",
-    "https://va13ak.github.io/ngSchulteTable/styles.67ed820728648df2.css": "7ed379ffe4558d423cf47585085d13641b58bb32"
+    "https://va13ak.github.io/ngSchulteTable/styles.f1387ec4340a195e.css": "331b0ea172a212baea98bcc4e33f0cdb236e6bb8"
   },
   "navigationUrls": [
     {

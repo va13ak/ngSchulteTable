@@ -1,9 +1,7 @@
 .bar-element {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-
-  font-size: medium;
 
   border: 2px solid grey;
   border-right: none;
@@ -12,12 +10,13 @@
   height: 100%;
 }
 
-p {
-  font-size: smaller;
-}
-
 .bar-score {
   font-weight: bold;
-  font-size: larger;
-  margin-top: 2px;
+  font-size: 125%;
+  margin-bottom: 3%;
+}
+
+.bar-title {
+  margin-top: 3%;
+  font-size: 75%;
 }
