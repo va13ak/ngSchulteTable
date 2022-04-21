@@ -19,12 +19,14 @@
   position: absolute;
   top: 50%;
   margin-top: calc((-1) * var(--tHeight) / 2);
+  left: 50%;
+  margin-left: calc((-1) * var(--tWidth) / 2);;
 
   width: var(--tWidth);
   height: var(--tHeight);
 
-  margin-left: auto;
-  margin-right: auto;
+  //margin-left: auto;
+  //margin-right: auto;
 
   display: grid;
   //grid-auto-rows: 1fr 1fr calc((var(--nf) - 2) * var(--f));
