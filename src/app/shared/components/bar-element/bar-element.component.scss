@@ -1,0 +1,23 @@
+.bar-element {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: medium;
+
+  border: 2px solid grey;
+  border-right: none;
+  border-left: none;
+
+  height: 100%;
+}
+
+p {
+  font-size: smaller;
+}
+
+.bar-score {
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 2px;
+}

@@ -4,9 +4,9 @@
   </div>
 
   <div class="statusbar" *ngIf="gService.isStarted(); else altStatusBar">
-    <p class="bar-element">Next: {{ gService.getNext() }}</p>
+    <app-bar-element title="Next" [value]="gService.getNext()"></app-bar-element>
     <button class="btn btn-red" (click)="onClick()">{{ gService.isStarted() ? 'Break' : 'Start' }}</button>
-    <p class="bar-element">Time: {{ (gService.time / 10) | number : '1.1-1' }}</p>
+    <app-bar-element title="Time" [value]="(gService.time / 10) | number : '1.1-1'"></app-bar-element>
   </div>
 
   <div></div>
@@ -22,9 +22,9 @@
 
   <ng-template #altStatusBar>
     <div class="statusbar">
-      <p class="bar-element">Last result: {{ (gService.getLastResult()) | number : '1.1-1' }}</p>
+      <app-bar-element title="Last result" [value]="(gService.getLastResult()) | number : '1.1-1'"></app-bar-element>
       <button class="btn" (click)="onClick()">Start new game</button>
-      <p class="bar-element">Best time: {{ (gService.getBestTime()) | number : '1.1-1' }}</p>
+      <app-bar-element title="Best time" [value]="(gService.getBestTime()) | number : '1.1-1'"></app-bar-element>
     </div>
   </ng-template>
 </div>

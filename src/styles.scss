@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
-  --nf: 12;
+  --nf: 10;
   --f: min(calc(96vmin / (var(--nf) - 2)), calc(96vh / var(--nf)));
   --tHeight: calc(var(--nf) * var(--f));
   --tWidth: calc(var(--tHeight) - 2 * var(--f));
@@ -62,20 +62,4 @@
 
   font-size: x-large;
   font-weight: bold;
-}
-
-.bar-element {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  font-size: medium;
-
-  border: 2px solid grey;
-  border-right: none;
-  border-left: none;
-}
-
-.dashed {
-  border: 1px dashed grey;
 }
