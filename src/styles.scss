@@ -16,6 +16,10 @@
 }
 
 .main {
+  position: absolute;
+  top: 50%;
+  margin-top: calc((-1) * var(--tHeight) / 2);
+
   width: var(--tWidth);
   height: var(--tHeight);
 

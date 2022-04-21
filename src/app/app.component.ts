@@ -24,3 +24,6 @@ export class AppComponent {
 // deploy:
 // https://github.com/angular-schule/angular-cli-ghpages#base-href
 // https://www.c-sharpcorner.com/blogs/a-guide-on-how-to-deploy-angular-applications-to-github-pages
+
+// TODO: update service
+// https://medium.com/innoventes/angular-pwa-and-app-update-1cfbf9c78da0
