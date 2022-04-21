@@ -30,10 +30,10 @@ export class EStatisticsComponent implements OnInit {
         //type: 'time', // https://github.com/apache/echarts/issues/13073
         axisLabel: {
           show: false,
-          position: 'bottom'
+          //position: 'bottom'
         },
         axisLine: {
-          onZero: false,
+          //onZero: false,
           show: false
         },
         data: this.data.map((item) => new Date(item.name)), // no need if type 'time'
@@ -44,12 +44,12 @@ export class EStatisticsComponent implements OnInit {
       yAxis: {
         inverse: true,
         scale: true,
-        name: 'time, s',
-        nameLocation: 'center',
-        nameTextStyle: {
-          padding: [0, 0, 15, 0],
-          fontSize: 16
-        }
+        // name: 'time, s',
+        // nameLocation: 'center',
+        // nameTextStyle: {
+        //   padding: [0, 0, 30, 0],
+        //   fontSize: 14
+        // }
       },
       series: [{
         type: 'line',
@@ -74,12 +74,10 @@ export class EStatisticsComponent implements OnInit {
         show: false
       },
       grid: {
-        //left: '45px',
-        //top: '10px',
+        //left: '15%',
         right: 5,
         top: '10%',
         bottom: '10%'
-        //bottom: '10px'
       }
     }
   }

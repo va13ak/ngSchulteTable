@@ -9,6 +9,8 @@
     <p class="bar-element">Time: {{ (gService.time / 10) | number : '1.1-1' }}</p>
   </div>
 
+  <div></div>
+
   <div class="container">
     <app-schulte-table *ngIf="gService.isStarted(); else statistics"></app-schulte-table>
   </div>

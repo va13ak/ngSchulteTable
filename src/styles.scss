@@ -2,7 +2,7 @@
 
 :root {
   --nf: 12;
-  --f: min(calc(98vmin / (var(--nf) - 2)), calc(98vh / var(--nf)));
+  --f: min(calc(96vmin / (var(--nf) - 2)), calc(96vh / var(--nf)));
   --tHeight: calc(var(--nf) * var(--f));
   --tWidth: calc(var(--tHeight) - 2 * var(--f));
 }
@@ -12,7 +12,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  //box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main {
@@ -23,7 +23,8 @@
   margin-right: auto;
 
   display: grid;
-  grid-auto-rows: 1fr 1fr calc((var(--nf) - 2) * var(--f));
+  //grid-auto-rows: 1fr 1fr calc((var(--nf) - 2) * var(--f));
+  grid-auto-rows: var(--f) var(--f) 5px auto; // calc((var(--nf) - 2) * var(--f));
 }
 
 .btn {
@@ -45,7 +46,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  margin-bottom: 5px;
+  height: 100%;
 }
 
 .title {
