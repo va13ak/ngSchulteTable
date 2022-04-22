@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="stat-element dashed">Games: {{ gService.getNumberOfGames() }}</div>
-  <div class="stat-element dashed">Average time: {{ gService.getAverageTime() | number : '1.1-1' }}</div>
+  <app-stat-element title="Games played" [value]="gService.getNumberOfGames()"></app-stat-element>
+  <app-stat-element title="Average time" [value]="(gService.getAverageTime()) | number : '1.1-1'"></app-stat-element>
   <div echarts [options]="options" [autoResize]="true" class="demo-chart dashed"></div>
 </div>

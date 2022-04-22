@@ -1,0 +1,33 @@
+.stat-element {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.stat-title {
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.stat-score {
+  font-weight: bold;
+  font-size: 125%;
+
+  width: 100%;
+  text-align: center;
+}
+
+.stat-circle {
+  border: 6px double lightseagreen;
+  border-radius: 100%;
+
+  --d: calc(var(--f) * 0.90);
+  height: var(--d);
+  width: var(--d);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

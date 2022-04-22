@@ -14,6 +14,7 @@ import { DatePipe } from "@angular/common";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BarElementComponent } from './shared/components/bar-element/bar-element.component';
+import { StatElementComponent } from './shared/components/stat-element/stat-element.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BarElementComponent } from './shared/components/bar-element/bar-element
     TableCellComponent,
     //StatisticsComponent,
     EStatisticsComponent,
-    BarElementComponent
+    BarElementComponent,
+    StatElementComponent
   ],
   imports: [
     BrowserModule,
