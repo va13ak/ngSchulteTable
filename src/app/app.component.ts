@@ -27,3 +27,13 @@ export class AppComponent {
 
 // TODO: update service
 // https://medium.com/innoventes/angular-pwa-and-app-update-1cfbf9c78da0
+
+// How to change Angular PWA app name, splash screen name & icon
+// https://shahc9437.medium.com/how-to-change-angular-pwa-app-name-splash-screen-name-icon-628387d95c72
+
+// ICON SET GENERATORS
+// https://tools.crawlink.com/tools/pwa-icon-generator/
+// https://www.pwabuilder.com/imageGenerator
+
+// FAVICON GENERATOR
+// https://realfavicongenerator.net/
