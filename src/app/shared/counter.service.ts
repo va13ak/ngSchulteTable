@@ -8,6 +8,7 @@ export class CounterService {
   tableCells: TableCell[] = [];
   width: number = 5;
   height: number = 5;
+  size: number = this.width * this.height;
   private current: number = 0;
   private started: boolean = false;
   private numbers: number[] = [];
@@ -95,7 +96,7 @@ export class CounterService {
       cell.checked = true;
       cell.date = new Date();
 
-      if (cell.value === (this.width * this.height)) {
+      if (cell.value === this.size) {
         let result = localStorage.getItem(this.storageKey + 'results');
         let aResult = [];
         if (result) {

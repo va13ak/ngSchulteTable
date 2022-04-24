@@ -69,6 +69,32 @@
   text-transform: uppercase;
 }
 
+.refresh {
+  position: absolute;
+  right: 15px;
+  //font-weight: bold;
+  font-size: smaller;
+  color: whitesmoke;
+
+  text-shadow:
+    -0   -1px 1px #000000,
+    0   -1px 1px #000000,
+    -0    1px 1px #000000,
+    0    1px 1px #000000,
+    -1px -0   1px #000000,
+    1px -0   1px #000000,
+    -1px  0   1px #000000,
+    1px  0   1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    1px  1px 1px #000000;
+}
+
 .dashed {
   border: 1px dashed grey;
 }

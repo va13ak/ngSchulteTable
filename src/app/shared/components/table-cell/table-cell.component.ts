@@ -17,12 +17,11 @@ export class TableCellComponent implements OnInit {
 
   onClick($event: any) {
     $event.stopPropagation();
-    if (!this.gService.isStarted()) {
-      this.gService.start();
-      return;
-    }
-    if (!this.cell.checked) {
+
+    if (this.gService.isStarted()) {
       this.gService.setChecked(this.cell);
+    } else {
+      this.gService.start();
     }
   }
 }

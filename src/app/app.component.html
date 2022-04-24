@@ -1,11 +1,11 @@
 <div class="main">
   <div class="title">
-    Schulte table
+    Schulte table <span class="refresh" *ngIf="gService.isStarted()" (click)="refresh()">&#10227;</span>
   </div>
 
   <div class="statusbar" *ngIf="gService.isStarted(); else altStatusBar">
     <app-bar-element title="Next" [value]="gService.getNext()"></app-bar-element>
-    <button class="btn btn-red" (click)="onClick()">{{ gService.isStarted() ? 'Break' : 'Start' }}</button>
+    <button class="btn btn-red" (click)="onClick()">{{ gService.isStarted() ? 'Stop' : 'Start' }}</button>
     <app-bar-element title="Time" [value]="(gService.time / 10) | number : '1.1-1'"></app-bar-element>
   </div>
 

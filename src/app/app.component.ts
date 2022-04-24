@@ -19,6 +19,11 @@ export class AppComponent {
       this.gService.start();
     }
   }
+
+  refresh() {
+    this.gService.stop();
+    this.gService.start();
+  }
 }
 
 // deploy:
