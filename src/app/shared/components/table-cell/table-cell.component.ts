@@ -15,7 +15,8 @@ export class TableCellComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick() {
+  onClick($event: any) {
+    $event.stopPropagation();
     if (!this.gService.isStarted()) {
       this.gService.start();
       return;
