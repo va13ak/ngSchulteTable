@@ -9,13 +9,10 @@
   cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    color: lightgreen;
+  &:active {
+      color: lightgreen;
   }
 
-  &:active {
-    background: none;
-  }
 
   background: none;
 

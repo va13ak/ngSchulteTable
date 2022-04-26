@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650985712364,
+  "timestamp": 1650987199497,
   "index": "https://va13ak.github.io/ngSchulteTable/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://va13ak.github.io/ngSchulteTable/favicon.ico",
         "https://va13ak.github.io/ngSchulteTable/index.html",
-        "https://va13ak.github.io/ngSchulteTable/main.ed67beb081ccc113.js",
+        "https://va13ak.github.io/ngSchulteTable/main.1dc85b2ea057a27b.js",
         "https://va13ak.github.io/ngSchulteTable/manifest.webmanifest",
         "https://va13ak.github.io/ngSchulteTable/polyfills.8d1cbda692d7a10d.js",
         "https://va13ak.github.io/ngSchulteTable/runtime.6b05ff43b8f20c92.js",
@@ -56,8 +56,8 @@
     "https://va13ak.github.io/ngSchulteTable/assets/icons/icon-72x72.png": "0408d474ef1075be2350a3afdd170351c7b8b349",
     "https://va13ak.github.io/ngSchulteTable/assets/icons/icon-96x96.png": "6d2e98f101d721efb8a85bdb6577d8c14880a9d9",
     "https://va13ak.github.io/ngSchulteTable/favicon.ico": "cdb2d24c6abec1a247bf7354238d67edbd047b85",
-    "https://va13ak.github.io/ngSchulteTable/index.html": "5a7f6769be1c92c5db3d1d70c50a5f722dad3996",
-    "https://va13ak.github.io/ngSchulteTable/main.ed67beb081ccc113.js": "f94c0b8bbb2f3e675314afe4ed1a89076674270a",
+    "https://va13ak.github.io/ngSchulteTable/index.html": "25b878699d764de1ad10df22dc17c35be3145b90",
+    "https://va13ak.github.io/ngSchulteTable/main.1dc85b2ea057a27b.js": "31ab8e66207f063261d2a652970581b9adb954ca",
     "https://va13ak.github.io/ngSchulteTable/manifest.webmanifest": "79ae5758a4559cdc663cc32df0d2519e929e847b",
     "https://va13ak.github.io/ngSchulteTable/polyfills.8d1cbda692d7a10d.js": "2cffbf64326bebb83531a58581eb4536a8868cc5",
     "https://va13ak.github.io/ngSchulteTable/runtime.6b05ff43b8f20c92.js": "bbac134ac79cc3b34b4dab947133cf74e2fc016d",
