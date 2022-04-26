@@ -20,7 +20,7 @@ export class TableCellComponent implements OnInit {
 
     if (this.gService.isStarted()) {
       if (this.gService.setChecked(this.cell)) {
-        window.navigator.vibrate(100);
+        window.navigator.vibrate(50);
       }
     } else {
       this.gService.start();

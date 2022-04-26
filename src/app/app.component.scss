@@ -13,6 +13,12 @@
     color: lightgreen;
   }
 
+  &:active {
+    background: none;
+  }
+
+  background: none;
+
   // https://protocoder.ru/css/strokeTextGen
   text-shadow:
     -0   -1px 1px #000000,
