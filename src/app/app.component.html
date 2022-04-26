@@ -1,6 +1,10 @@
-<div class="main">
+<div class="main no-select">
   <div class="title">
-    Schulte table <span class="refresh" *ngIf="gService.isStarted()" (click)="refresh()">&#10227;</span>
+    Schulte table
+    <span class="refresh no-select" *ngIf="gService.isStarted()" (click)="refresh()">
+<!--      &#10227;-->
+      &#8635;
+    </span>
   </div>
 
   <div class="statusbar" *ngIf="gService.isStarted(); else altStatusBar">

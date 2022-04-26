@@ -19,7 +19,9 @@ export class TableCellComponent implements OnInit {
     $event.stopPropagation();
 
     if (this.gService.isStarted()) {
-      this.gService.setChecked(this.cell);
+      if (this.gService.setChecked(this.cell)) {
+        window.navigator.vibrate(100);
+      }
     } else {
       this.gService.start();
     }
